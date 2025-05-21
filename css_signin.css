@@ -1,0 +1,181 @@
+/* RESET DAN FONT */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* BACKGROUND */
+body, html {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  background: linear-gradient(to right, #b974be 20%, #dbc7dc 60%, #f9f9f9 90%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CONTAINER */
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  padding: 60px;
+}
+
+/* FORM SECTION */
+.form-box {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-box h2 {
+  font-size: 100px;
+  margin-bottom: -30px;
+  color: #2c2c2c;
+  text-align: center;
+}
+
+/* FORM STYLING */
+form label {
+  font-size: 50px;
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 60px;
+  font-size: 50px;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  transition: all 0.3s ease;
+}
+
+form input:hover {
+  border-color: #b75cd6;
+  background-color: #f3e6f5;
+  box-shadow: 0 0 30px rgba(183, 92, 214, 0.3);
+}
+
+form input:focus {
+  outline: none;
+  border-color: #8e44ad;
+  background-color: #fff0ff;
+  box-shadow: 0 0 40px rgba(142, 68, 173, 0.5);
+}
+
+label:hover {
+  color: #8e44ad;
+  transform: scale(1.05);
+  
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 50px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.checkbox input {
+  transform: scale(4); /* lebih kecil dari sebelumnya agar tidak terlalu besar */
+  margin-right: 35px;
+}
+
+.checkbox label {
+  font-size: 50px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.checkbox a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.checkbox a:hover {
+  color: #320351;
+  text-shadow: 0 0 5px #b75cd6;
+  transition: 0.3s ease;
+}
+
+/* TOMBOL */
+button {
+  width: 100%;
+  padding: 60px;
+  font-size: 50px;
+  background-color: #721a79;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #320351;
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(176, 122, 180, 0.5);
+}
+
+/* LINK KE LOGIN */
+.login-link {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/*masuk*/
+.login-link a {
+  color: #0a000d;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  color: #320351;
+  text-shadow: 0 0 10px #b75cd6;
+  transition: all 0.3s ease;
+}
+
+/* GAMBAR  */
+.image-box {
+  flex: 1;
+
+  height: 110%;
+  padding: 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/*bergabunglah dengan mentalcare */
+.image-box h2 {
+  font-size: 100px;
+  color: #3c234c;
+  margin-bottom: -4%;
+}
+
+.image-box img {
+  width: 10000%;
+  max-width: 90%;
+  height: auto;
+}

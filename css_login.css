@@ -1,0 +1,177 @@
+/* RESET DAN FONT */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* BACKGROUND GRADIENT FULLSCREEN - DISAMAKAN DENGAN DAFTAR */
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, #b974be 20%, #dbc7dc 60%, #f9f9f9 90%);
+  overflow: hidden;
+}
+
+/* CONTAINER FULL FLEX */
+.container {
+  display: flex;
+  height: 85vh;
+  width: 100vw;
+}
+
+/* BAGIAN KIRI & KANAN */
+.left, .right {
+  flex: 1;
+  height: 100%;
+}
+
+/* GAMBAR KIRI */
+.left img {
+  width: 100%;
+  max-width: 90%;
+  height: 110%;
+  padding: 6%;
+}
+
+/* FORM KANAN */
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+}
+
+/* FORM WRAPPER */
+.form-wrapper {
+  width: 100%;
+  max-width: 1500px;
+}
+
+/* JUDUL LOGIN */
+h2 {
+  text-align: center;
+  margin-bottom: -50px;
+  font-size: 100px;
+  color: #2c2c2c;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 50px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 60px;
+  font-size: 50px;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  transition: 0.3s ease;
+}
+
+input[type="email"]:hover,
+input[type="password"]:hover {
+  border-color: #b75cd6;
+  background-color: #f3e6f5;
+  box-shadow: 0 0 30px rgba(183, 92, 214, 0.3);
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #8e44ad;
+  background-color: #fff0ff;
+  box-shadow: 0 0 40px rgba(142, 68, 173, 0.5);
+}
+
+/* LABEL HOVER */
+label:hover {
+  color: #8e44ad;
+  transform: scale(1.05);
+}
+
+/* LUPA PASSWORD */
+.forgot {
+  text-align: right;
+  margin-top: 200px;
+  font-size: 50px;
+  color: #7a7a7a;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.forgot:hover {
+  color: #b75cd6;
+  text-decoration: underline;
+  transform: scale(1.03);
+}
+
+/* TOMBOL MASUK - DISAMAKAN */
+button {
+  width: 100%;
+  padding: 60px;
+  font-size: 50px;
+  background-color: #721a79;;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #320351;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(176, 122, 180, 0.5);
+}
+
+/* REGISTER LINK - DISAMAKAN */
+.register {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 50px;
+}
+
+.register a {
+  color: #7a3bb3;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.register a:hover {
+  color: #320351;
+  text-shadow: 0 0 8px #b75cd6;
+}
+
+/* HOVER PADA HEADER UTAMA */
+.welcome-header:hover {
+  color: #b75cd6;
+  text-shadow: 4px 4px 20px #e6b4ef;
+  transition: 0.4s ease;
+}
+
+/* HOVER FORM WRAPPER GLOW ANIMASI */
+.form-wrapper:hover {
+  animation: pulseGlow 3s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0 rgba(176, 122, 180, 0);
+  }
+  50% {
+    box-shadow: 0 0 60px rgba(176, 122, 180, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(176, 122, 180, 0);
+  }
+}
